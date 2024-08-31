@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+@* <h5>@ViewData["ProductTitle"]</h5>
+price : @ViewBag.ProductPrice
+ *@
+
+<h5>Razor Syntax</h5>
+
+@{
+    var name = "Zaid";
+    var age = 20;
+    var favGame = "PUBG";
+}
+
+<p> Hii My name is <b><i>@name</i></b> and I am <b><i>@age</i></b> years old and 
+    My Favourite game is <b><i>@favGame</i></b>. </p>
+
+@{
+    var msg = "Hello World";
+}
+<p>@msg</p>
+<p>@Html.Raw(@msg.Substring(0,4))</p>
+
+@{
+    var Country = "Pakistan";
+}
+
+My Country Name is @(Country.Substring(0,3)). Your age is : <b>@(53 + 8)</b>.
+
+@{
+    var sum = 32 + 8;
+    var greeting = "Hii";
+    var text = "";
+    for(int i = 0; i < 3; i++)
+    {
+        text += greeting + " The Result is: " + sum + "\n";
+    }
+}
+
+<h5>For Loop Result</h5>
+Text: @text
