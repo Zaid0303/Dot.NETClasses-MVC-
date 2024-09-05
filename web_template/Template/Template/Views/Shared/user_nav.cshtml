@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="inner-header">
+                <div class="logo">
+                    <a asp-action="Index" asp-controller="UserWeb"><img src="~/UserWeb/img/logo.png" alt=""></a>
+                </div>
+                <div class="header-right">
+                    <img src="~/UserWeb/img/icons/search.png" alt="" class="search-trigger">
+                    <img src="~/UserWeb/img/icons/man.png" alt="">
+                    <a href="#">
+                        <img src="~/UserWeb/img/icons/bag.png" alt="">
+                        <span>2</span>
+                    </a>
+                </div>
+                <div class="user-access">
+                    <a href="#">Register</a>
+                    <a href="#" class="in">Sign in</a>
+                </div>
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li><a class="active" asp-action="Index" asp-controller="UserWeb">Home</a></li>
+                        <li>
+                            <a href="./categories.html">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a asp-action="product_page" asp-controller="UserWeb">Product Page</a></li>
+                                <li><a href="shopping-cart.html">Shopping Card</a></li>
+                                <li><a href="check-out.html">Check out</a></li>
+                            </ul>
+                        </li>
+                        <li><a asp-action="about" asp-controller="UserWeb">About</a></li>
+                        <li><a href="./check-out.html">Blog</a></li>
+                        <li><a asp-action="Contact" asp-controller="UserWeb">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+}
